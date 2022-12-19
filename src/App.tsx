@@ -17,11 +17,8 @@ export const App = () => {
         customValidate={undefined}
         formData={{
           firstName: undefined,
-          lastName: undefined,
-          age: undefined,
-          telephone: undefined
+          lastName: ''
         }}
-        noValidate={undefined}
         omitExtraData={false}
         onBlur={(id, value) =>
           console.log(`Touched ${id} with value ${value}`)
