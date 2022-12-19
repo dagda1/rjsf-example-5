@@ -10,7 +10,7 @@ export const App = () => {
     <div className="container-fluid">
       <Form
         validator={validator}
-        schema={schema}
+        schema={schema as any}
         showErrorList={false}
         noHtml5Validate
       />
