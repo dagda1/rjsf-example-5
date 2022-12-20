@@ -1,7 +1,7 @@
 import schema from "./form/schema.json";
 import { withTheme } from "@rjsf/core";
 import { Theme as MuiTheme } from "@rjsf/material-ui";
-import validator from "@rjsf/validator-ajv8";
+import validator from "@rjsf/validator-ajv6";
 
 const Form = withTheme(MuiTheme);
 
@@ -16,10 +16,8 @@ export const App = () => {
     uiSchema={{}}
     customValidate={undefined}
     formData={{
-      firstName: undefined,
-      lastName: ''
     }}
-    omitExtraData={false}
+    omitExtraData={true}
   />
 </div>
   );
